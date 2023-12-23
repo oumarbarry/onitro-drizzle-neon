@@ -1,0 +1,37 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nitropack dev",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs",
+    "postinstall": "nitropack prepare",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "bun run scripts/migrate.ts",
+    "db:check": "drizzle-kit check:pg",
+    "db:drop": "drizzle-kit drop",
+    "db:pull": "drizzle-kit introspect:pg",
+    "db:push": "drizzle-kit push:pg",
+    "db:studio": "drizzle-kit studio",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.6.1",
+    "drizzle-orm": "^0.29.1",
+    "drizzle-zod": "^0.5.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.4.6",
+    "@types/node": "^18.19.3",
+    "drizzle-kit": "^0.20.7",
+    "eslint": "^8.56.0",
+    "nitropack": "^2.8.1",
+    "pg": "^8.11.3",
+    "postgres": "^3.4.3",
+    "typescript": "^5.3.3"
+  },
+  "overrides": {
+    "drizzle-orm": "^0.29.1"
+  }
+}
