@@ -17,21 +17,18 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^0.6.1",
-    "drizzle-orm": "^0.29.1",
+    "@neondatabase/serverless": "^0.9.3",
+    "drizzle-orm": "^0.30.10",
     "drizzle-zod": "^0.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.4.6",
-    "@types/node": "^18.19.3",
-    "drizzle-kit": "^0.20.7",
-    "eslint": "^8.56.0",
-    "nitropack": "^2.8.1",
-    "pg": "^8.11.3",
-    "postgres": "^3.4.3",
-    "typescript": "^5.3.3"
-  },
-  "overrides": {
-    "drizzle-orm": "^0.29.1"
+    "@antfu/eslint-config": "^2.18.1",
+    "@types/node": "^20.12.12",
+    "drizzle-kit": "^0.21.2",
+    "eslint": "^9.3.0",
+    "nitropack": "^2.9.6",
+    "pg": "^8.11.5",
+    "postgres": "^3.4.4",
+    "typescript": "^5.4.5"
   }
 }

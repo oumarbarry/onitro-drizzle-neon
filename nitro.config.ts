@@ -1,12 +1,13 @@
 export default defineNitroConfig({
-  srcDir: "src",
+  srcDir: "server",
 
   routeRules: {
     "/api/**": { cors: true },
   },
 
   imports: {
-    dirs: ["./src/db/**"],
+    dirs: ["./server/db/**"],
+
     imports: [
       { from: "zod", name: "z" },
     ],
